@@ -42,7 +42,7 @@ namespace Client_server_chat
         {
             foreach (var item in users)
             {
-                string answer = DateTime.Now.ToShortTimeString();
+                string answer = DateTime.Now.ToLongTimeString();
 
                 var user = users.FirstOrDefault(i => i.ID == id);
                 if (user != null)
